@@ -1,0 +1,43 @@
+# Global editor/OS cruft
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.*
+*.local
+
+# Dependency folders (monorepo)
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/build/
+**/.next/
+**/out/
+
+# Coverage and reports
+**/coverage/
+**/.nyc_output/
+
+# Caches
+**/.cache/
+**/.vite/
+**/.eslintcache
+**/.parcel-cache
+**/.turbo/
+
+# IDE/project files
+.vscode/
+.idea/
+*.iml
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
