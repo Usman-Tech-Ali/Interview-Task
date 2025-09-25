@@ -43,7 +43,7 @@ export default function AdminDashboard() {
       {/* Navigation Tabs */}
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl shadow-lg shadow-slate-200/40 p-2 mb-6">
-          <nav className="flex gap-1">
+          <nav className="flex gap-1 flex-wrap">
             <Tab to="/admin/customers">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
@@ -60,7 +60,7 @@ export default function AdminDashboard() {
         </div>
 
         {/* Content Area */}
-        <div className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl shadow-lg shadow-slate-200/40 p-6">
+        <div className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl shadow-lg shadow-slate-200/40 p-4 sm:p-6">
           <Routes>
             <Route index element={<Navigate to="customers" replace />} />
             <Route path="customers" element={<AdminCustomers />} />

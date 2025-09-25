@@ -4,8 +4,8 @@ export default function AuthLayout({ children, active }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <header className="backdrop-blur-sm bg-white/80 border-b border-slate-200/60 sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-3 flex-wrap">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">B</span>
@@ -37,7 +37,7 @@ export default function AuthLayout({ children, active }) {
           </div>
         </div>
       </header>
-      <main className="p-6">
+      <main className="p-4 sm:p-6">
         {children}
       </main>
     </div>

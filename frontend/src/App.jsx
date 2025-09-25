@@ -21,7 +21,7 @@ import CustomerDashboard from './pages/CustomerDashboard'
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      <main className="p-6">
+      <main className="p-4 sm:p-6">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />

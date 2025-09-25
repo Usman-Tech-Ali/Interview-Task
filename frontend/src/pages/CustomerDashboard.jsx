@@ -44,7 +44,7 @@ export default function CustomerDashboard() {
       {/* Navigation Tabs */}
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl shadow-lg shadow-slate-200/40 p-2 mb-6">
-          <nav className="flex gap-1">
+          <nav className="flex gap-1 flex-wrap">
             <Tab to="/customer/profile">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -67,7 +67,7 @@ export default function CustomerDashboard() {
         </div>
 
         {/* Content Area */}
-        <div className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl shadow-lg shadow-slate-200/40 p-6">
+        <div className="bg-white/70 backdrop-blur-sm border border-slate-200/60 rounded-2xl shadow-lg shadow-slate-200/40 p-4 sm:p-6">
           <Routes>
             <Route index element={<Navigate to="profile" replace />} />
             <Route path="profile" element={<Profile />} />
